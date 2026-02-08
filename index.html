@@ -14,8 +14,8 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #2c3e50;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5f7f 100%);
             min-height: 100vh;
         }
         
@@ -42,6 +42,31 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
         }
         
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            border: 5px solid #c9a961;
+            object-fit: cover;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .profile-photo-placeholder {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto 25px;
+            border: 5px solid #c9a961;
+            background: linear-gradient(135deg, #1e3a5f 0%, #c9a961 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            color: white;
+            font-weight: bold;
+        }
+        
         h1 {
             font-size: 2.5em;
             color: #2c3e50;
@@ -50,7 +75,7 @@
         
         .subtitle {
             font-size: 1.3em;
-            color: #667eea;
+            color: #c9a961;
             font-weight: 600;
             margin-bottom: 15px;
         }
@@ -68,26 +93,26 @@
         }
         
         .contact-info a {
-            color: #667eea;
+            color: #c9a961;
             text-decoration: none;
             margin: 0 15px;
             transition: color 0.3s;
         }
         
         .contact-info a:hover {
-            color: #764ba2;
+            color: #1e3a5f;
         }
         
         h2 {
-            color: #2c3e50;
+            color: #1e3a5f;
             font-size: 2em;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #c9a961;
         }
         
         h3 {
-            color: #667eea;
+            color: #1e3a5f;
             font-size: 1.5em;
             margin: 25px 0 10px 0;
         }
@@ -104,7 +129,7 @@
             padding: 25px;
             border-radius: 10px;
             margin-bottom: 25px;
-            border-left: 5px solid #667eea;
+            border-left: 5px solid #c9a961;
             transition: transform 0.3s, box-shadow 0.3s;
         }
         
@@ -153,7 +178,7 @@
             background: #f8f9fa;
             padding: 20px;
             border-radius: 10px;
-            border-top: 4px solid #667eea;
+            border-top: 4px solid #c9a961;
         }
         
         .skill-category h4 {
@@ -178,7 +203,7 @@
         
         .skill-category li:before {
             content: "▹ ";
-            color: #667eea;
+            color: #c9a961;
             font-weight: bold;
         }
         
@@ -201,7 +226,7 @@
         
         .cta-button {
             display: inline-block;
-            background: #667eea;
+            background: #c9a961;
             color: white;
             padding: 12px 30px;
             border-radius: 25px;
@@ -212,7 +237,7 @@
         }
         
         .cta-button:hover {
-            background: #764ba2;
+            background: #1e3a5f;
             transform: translateY(-2px);
         }
         
@@ -234,6 +259,9 @@
 <body>
     <div class="container">
         <header>
+            <!-- Replace this placeholder with your photo: 
+                 <img src="your-photo.jpg" alt="Sheeny Mae Viason" class="profile-photo"> -->
+<img src="profile-photo.jpg" alt="Sheeny Mae Viason" class="profile-photo">
             <h1>Sheeny Mae B. Viason</h1>
             <div class="subtitle">Licensed Civil Engineer | Project Management Professional</div>
             <p class="tagline">Engineer by profession, problem-solver by nature, songwriter by passion 🎹</p>
@@ -247,7 +275,7 @@
         <div class="card about-section">
             <h2>About Me</h2>
             <p>
-                I'm a Licensed Civil Engineer with 17+ years of experience spanning construction management, 
+                I'm a Licensed Civil Engineer with 15+ years of experience spanning construction management, 
                 project coordination, and remote operations. What makes my profile unique is my ability to 
                 bridge technical engineering expertise with strong organizational and communication skills.
             </p>
@@ -259,8 +287,8 @@
             </p>
             <p>
                 I'm self-directed, detail-oriented, and thrive in environments where proactive communication 
-                and accountability matter. My diverse background—spanning construction, technology, and 
-                remote executive support—gives me a unique perspective on problem-solving and project delivery.
+                and accountability matter. My diverse background spanning construction, technology,
+                remote executive support, and even in Music, gives me a unique perspective on problem-solving and project delivery.
             </p>
             <a href="mailto:smv5661@gmail.com" class="cta-button">Get in Touch</a>
         </div>
@@ -289,13 +317,12 @@
                     <li>Created standardized templates for contracts, correspondence, and project records</li>
                     <li>Established stakeholder communication protocols across all project teams</li>
                     <li>Trained team on new processes and iteratively improved based on feedback</li>
-                    <li>Delivered complete visibility into all concurrent projects within 3 months</li>
                 </ul>
             </div>
 
             <div class="project">
                 <div class="project-title">Multi-Site Construction Supervision</div>
-                <div class="project-meta">VB Construct & Resource, Inc. | Licensed Civil Engineer | 2024-Present</div>
+                <div class="project-meta">VB Construct & Resource, Inc. | Licensed Civil Engineer | 2024-2025</div>
                 <div class="project-description">
                     <strong>Scope:</strong> Supervising multiple concurrent construction projects from planning 
                     through completion, ensuring compliance with safety standards, building codes, and client 
@@ -333,22 +360,21 @@
                     <li>Managed complex scheduling across multiple time zones without conflicts</li>
                     <li>Produced and edited podcast episodes with consistent quality standards</li>
                     <li>Conducted specialized research and delivered actionable reports</li>
-                    <li>Coordinated interviews with industry experts across different time zones</li>
+                    <li>Coordinated interviews with industry experts across the United States</li>
                 </ul>
             </div>
 
             <div class="project">
-                <div class="project-title">Banking Automation & Database Management</div>
+                <div class="project-title">Strategic Solutions Management</div>
                 <div class="project-meta">Unionbank of the Philippines | Junior Officer | 2007</div>
                 <div class="project-description">
-                    <strong>Scope:</strong> Implementing automation solutions to streamline banking processes 
+                    <strong>Scope:</strong> Implementing automation solutions to streamline internal banking processes 
                     and administering database management systems with focus on data integrity.
                 </div>
                 <ul class="project-highlights">
                     <li>Developed automated workflows that reduced manual effort and improved accuracy</li>
-                    <li>Administered DBMS with focus on data integrity and security</li>
-                    <li>Collaborated with IT teams and branch managers on technology deployment</li>
-                    <li>Provided technical support and training on automation tools</li>
+                    <li>Collaborated with IT teams and branch managers on system deployment</li>
+                    <li>Provided technical support and documentation on automation tools</li>
                 </ul>
             </div>
         </div>
@@ -363,7 +389,7 @@
                         <li>Multi-Stakeholder Coordination</li>
                         <li>Budget & Cost Management</li>
                         <li>Schedule Development & Tracking</li>
-                        <li>Risk Assessment & Mitigation</li>
+                        <li>COSH (Construction Occupational Safety and Health)</li>
                         <li>Quality Control & Compliance</li>
                     </ul>
                 </div>
@@ -373,10 +399,10 @@
                     <ul>
                         <li>Civil Engineering (Licensed)</li>
                         <li>Construction Management</li>
-                        <li>Database Management (DBMS)</li>
-                        <li>Process Automation</li>
+                        <li>Bid Proposal Development</li>
+                        <li>SWA (Statement of Work Accomplished)</li>
+                        <li>Variation Orders & Change Management</li>
                         <li>Technical Documentation</li>
-                        <li>AutoCAD & Engineering Software</li>
                     </ul>
                 </div>
                 
@@ -385,10 +411,22 @@
                     <ul>
                         <li>Microsoft Office Suite (Advanced)</li>
                         <li>Google Workspace</li>
-                        <li>Project Management Tools</li>
-                        <li>Slack, Trello, Asana</li>
+                        <li>Project Management Software</li>
                         <li>Microsoft Teams, Zoom</li>
+                        <li>Logic Pro & GarageBand (Audio Editing)</li>
                         <li>Quick learner of new platforms</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>AI & Productivity</h4>
+                    <ul>
+                        <li>AI-Assisted Research & Analysis</li>
+                        <li>ChatGPT, Claude, Gemini</li>
+                        <li>Perplexity AI for Information Synthesis</li>
+                        <li>AI-Enhanced Documentation</li>
+                        <li>Workflow Automation</li>
+                        <li>Tech-Forward Problem Solving</li>
                     </ul>
                 </div>
                 
@@ -423,8 +461,8 @@
         <div class="card" style="text-align: center;">
             <h2>Let's Work Together</h2>
             <p style="font-size: 1.1em; color: #555; margin-bottom: 20px;">
-                I'm currently open to remote opportunities in project management, construction coordination, 
-                technical documentation, and process optimization.
+                I'm currently open to remote opportunities in construction management, project coordination, 
+                technical documentation and research, and process optimization.
             </p>
             <a href="mailto:smv5661@gmail.com" class="cta-button">Contact Me</a>
         </div>
@@ -434,7 +472,7 @@
         <p>&copy; 2026 Sheeny Mae B. Viason | Licensed Civil Engineer</p>
         <p style="margin-top: 10px;">
             <a href="mailto:smv5661@gmail.com">Email</a> | 
-            <a href="https://github.com/yourusername">GitHub</a>
+            <a href="https://github.com/sheenymae">GitHub</a>
         </p>
     </footer>
 </body>
