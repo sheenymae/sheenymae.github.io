@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheeny Mae Viason - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin: 20px 0;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .tagline {
+            color: #7f8c8d;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #ecf0f1;
+        }
+        
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: #764ba2;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin: 25px 0 10px 0;
+        }
+        
+        .about-section p {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .project {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .project-title {
+            font-size: 1.4em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .project-meta {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        
+        .project-description {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .project-highlights {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+        
+        .project-highlights li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 4px solid #667eea;
+        }
+        
+        .skill-category h4 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+        }
+        
+        .skill-category li {
+            padding: 8px 0;
+            color: #555;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .skill-category li:last-child {
+            border-bottom: none;
+        }
+        
+        .skill-category li:before {
+            content: "▹ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            margin-top: 40px;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s, transform 0.3s;
+            font-weight: 600;
+        }
+        
+        .cta-button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .card {
+                padding: 25px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sheeny Mae B. Viason</h1>
+            <div class="subtitle">Licensed Civil Engineer | Project Management Professional</div>
+            <p class="tagline">Engineer by profession, problem-solver by nature, songwriter by passion 🎹</p>
+            <div class="contact-info">
+                <a href="mailto:smv5661@gmail.com">📧 smv5661@gmail.com</a>
+                <a href="tel:+639454320591">📱 +639454320591</a>
+                <span>📍 Cebu City, Philippines</span>
+            </div>
+        </header>
+
+        <div class="card about-section">
+            <h2>About Me</h2>
+            <p>
+                I'm a Licensed Civil Engineer with 17+ years of experience spanning construction management, 
+                project coordination, and remote operations. What makes my profile unique is my ability to 
+                bridge technical engineering expertise with strong organizational and communication skills.
+            </p>
+            <p>
+                I excel at managing complex projects independently, coordinating diverse stakeholders, and 
+                creating efficient systems that make everyone's work easier. Whether supervising construction 
+                sites, developing documentation frameworks, or managing remote operations across time zones, 
+                I bring systematic thinking, attention to detail, and genuine commitment to quality.
+            </p>
+            <p>
+                I'm self-directed, detail-oriented, and thrive in environments where proactive communication 
+                and accountability matter. My diverse background—spanning construction, technology, and 
+                remote executive support—gives me a unique perspective on problem-solving and project delivery.
+            </p>
+            <a href="mailto:smv5661@gmail.com" class="cta-button">Get in Touch</a>
+        </div>
+
+        <div class="card">
+            <h2>Featured Projects</h2>
+            
+            <div class="project">
+                <div class="project-title">Construction Documentation System Development</div>
+                <div class="project-meta">3S Builders | Project Coordinator | 2014-2024</div>
+                <div class="project-description">
+                    <strong>Challenge:</strong> Rapidly growing construction company lacked centralized project 
+                    documentation and communication protocols. Documentation was scattered across emails and paper 
+                    files, leading to miscommunications and inefficiencies.
+                </div>
+                <div class="project-description">
+                    <strong>Solution:</strong> Developed comprehensive HR and documentation system from ground up, 
+                    including standardized templates, centralized filing structure, and regular check-in protocols.
+                </div>
+                <div class="project-description">
+                    <strong>Impact:</strong> System became operational standard still in use today. Significantly 
+                    improved project tracking accuracy, reduced client communication complaints, and freed management 
+                    to focus on growth instead of firefighting.
+                </div>
+                <ul class="project-highlights">
+                    <li>Created standardized templates for contracts, correspondence, and project records</li>
+                    <li>Established stakeholder communication protocols across all project teams</li>
+                    <li>Trained team on new processes and iteratively improved based on feedback</li>
+                    <li>Delivered complete visibility into all concurrent projects within 3 months</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Multi-Site Construction Supervision</div>
+                <div class="project-meta">VB Construct & Resource, Inc. | Licensed Civil Engineer | 2024-Present</div>
+                <div class="project-description">
+                    <strong>Scope:</strong> Supervising multiple concurrent construction projects from planning 
+                    through completion, ensuring compliance with safety standards, building codes, and client 
+                    specifications.
+                </div>
+                <div class="project-description">
+                    <strong>Responsibilities:</strong> Budget management, subcontractor coordination, quality control, 
+                    safety compliance, schedule management, and stakeholder communication.
+                </div>
+                <ul class="project-highlights">
+                    <li>Manage multiple concurrent projects within strict timelines and budgets</li>
+                    <li>Coordinate with management, clients, and subcontractors for seamless execution</li>
+                    <li>Implement quality control measures and conduct regular site inspections</li>
+                    <li>Ensure full compliance with safety standards and building regulations</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Remote Executive Operations Management</div>
+                <div class="project-meta">College Funding Resource | Executive Assistant (Remote) | 2012-2014</div>
+                <div class="project-description">
+                    <strong>Challenge:</strong> Supporting C-suite executive across 15-hour time zone difference 
+                    while managing executive scheduling, research, content production, and podcast editing.
+                </div>
+                <div class="project-description">
+                    <strong>Solution:</strong> Developed proactive communication systems, detailed documentation 
+                    protocols, and self-directed workflows that enabled asynchronous collaboration.
+                </div>
+                <div class="project-description">
+                    <strong>Impact:</strong> Successfully supported executive for 2 years with client citing 
+                    reliability exceeding in-person assistants. Delivered publication-ready content consistently 
+                    without requiring direct supervision.
+                </div>
+                <ul class="project-highlights">
+                    <li>Managed complex scheduling across multiple time zones without conflicts</li>
+                    <li>Produced and edited podcast episodes with consistent quality standards</li>
+                    <li>Conducted specialized research and delivered actionable reports</li>
+                    <li>Coordinated interviews with industry experts across different time zones</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Banking Automation & Database Management</div>
+                <div class="project-meta">Unionbank of the Philippines | Junior Officer | 2007</div>
+                <div class="project-description">
+                    <strong>Scope:</strong> Implementing automation solutions to streamline banking processes 
+                    and administering database management systems with focus on data integrity.
+                </div>
+                <ul class="project-highlights">
+                    <li>Developed automated workflows that reduced manual effort and improved accuracy</li>
+                    <li>Administered DBMS with focus on data integrity and security</li>
+                    <li>Collaborated with IT teams and branch managers on technology deployment</li>
+                    <li>Provided technical support and training on automation tools</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Project Management</h4>
+                    <ul>
+                        <li>Construction Project Supervision</li>
+                        <li>Multi-Stakeholder Coordination</li>
+                        <li>Budget & Cost Management</li>
+                        <li>Schedule Development & Tracking</li>
+                        <li>Risk Assessment & Mitigation</li>
+                        <li>Quality Control & Compliance</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Technical Skills</h4>
+                    <ul>
+                        <li>Civil Engineering (Licensed)</li>
+                        <li>Construction Management</li>
+                        <li>Database Management (DBMS)</li>
+                        <li>Process Automation</li>
+                        <li>Technical Documentation</li>
+                        <li>AutoCAD & Engineering Software</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Tools & Software</h4>
+                    <ul>
+                        <li>Microsoft Office Suite (Advanced)</li>
+                        <li>Google Workspace</li>
+                        <li>Project Management Tools</li>
+                        <li>Slack, Trello, Asana</li>
+                        <li>Microsoft Teams, Zoom</li>
+                        <li>Quick learner of new platforms</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Core Competencies</h4>
+                    <ul>
+                        <li>Self-Directed & Proactive</li>
+                        <li>Remote Work Excellence</li>
+                        <li>Stakeholder Communication</li>
+                        <li>Process Optimization</li>
+                        <li>Detail-Oriented Execution</li>
+                        <li>Adaptable Problem-Solver</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Education & Credentials</h2>
+            <h3>Professional License</h3>
+            <p><strong>Licensed Civil Engineer</strong> - Professional Regulation Commission (PRC), Philippines</p>
+            <p style="color: #7f8c8d; margin-bottom: 25px;">Valid: July 2022 – May 2028</p>
+            
+            <h3>Education</h3>
+            <p><strong>Bachelor of Science in Civil Engineering</strong></p>
+            <p style="color: #7f8c8d; margin-bottom: 15px;">University of Cebu | Cebu City, Philippines | 2017-2021</p>
+            
+            <p><strong>Bachelor of Science in Information Technology</strong></p>
+            <p style="color: #7f8c8d;">Centre for International Education | Cebu City, Philippines | 2003-2010</p>
+        </div>
+
+        <div class="card" style="text-align: center;">
+            <h2>Let's Work Together</h2>
+            <p style="font-size: 1.1em; color: #555; margin-bottom: 20px;">
+                I'm currently open to remote opportunities in project management, construction coordination, 
+                technical documentation, and process optimization.
+            </p>
+            <a href="mailto:smv5661@gmail.com" class="cta-button">Contact Me</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sheeny Mae B. Viason | Licensed Civil Engineer</p>
+        <p style="margin-top: 10px;">
+            <a href="mailto:smv5661@gmail.com">Email</a> | 
+            <a href="https://github.com/yourusername">GitHub</a>
+        </p>
+    </footer>
+</body>
+</html>
